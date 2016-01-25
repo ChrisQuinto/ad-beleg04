@@ -30,6 +30,7 @@ std::vector<float> dijsktra(
     {
         unvisited_nodes.insert(*i);
         distances.push_back(INFINITY);
+        prev.push_back(-1);
     }
 
     distances[start] = 0;
